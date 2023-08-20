@@ -582,7 +582,7 @@
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) and (min-width: 374.98px) {
+@media (max-width: 575.98px) {
     .container{
         max-width: 100%;
         padding-inline: 20px;
