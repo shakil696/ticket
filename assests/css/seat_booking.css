@@ -18,9 +18,9 @@
 }
 .seat_map{
     width: 100%;
-    box-shadow: 0 3px 20px 1px rgba(31, 31, 31, 0.15);
+    box-shadow: 0 3px 20px 2px rgba(31, 31, 31, 0.15);
     height: 600px;
-    border: 1px solid #d7d7d7;
+    border: 2px solid #d7d7d7;
 }
 .seat_map input{
     display: none;
@@ -29,24 +29,73 @@
     position: relative;
     width: 100%;
     height: 60%;
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 2px solid #d7d7d7;
 }
 .small_room_block{
     display: flex;
     justify-content: space-between;
     height: 40%;
+    position: relative;
+}
+.entry_line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%) rotate(-90deg);
 }
 .left_room{
     position: relative;
     width: 45%;
     height: 100%;
-    border-right: 1px solid #d7d7d7;
+    border-right: 2px solid #d7d7d7;
+}
+.left_room::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left_room::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 .right_room{
     position: relative;
     width: 45%;
-    border-left: 1px solid #d7d7d7;
+    border-left: 2px solid #d7d7d7;
     height: 100%;
+}
+.right_room::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right_room::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 .left_room label,
 .right_room label,
@@ -232,28 +281,28 @@
     right: 530px;
 }
 .main_room .r42{
-    top: 50px;
-    left: 30px;
+    bottom: 200px;
+    left: 0;
 }
 .main_room .r43{
-    top: 90px;
-    left: 30px;
+    bottom: 160px;
+    left: 0;
 }
 .main_room .r44{
-    top: 130px;
-    left: 30px;
+    bottom: 120px;
+    left: 0;
 }
 .main_room .r45{
-    top: 170px;
-    left: 30px;
+    bottom: 80px;
+    left: 0;
 }
 .main_room .r46{
-    top: 210px;
-    left: 30px;
+    bottom: 40px;
+    left: 0;
 }
 .main_room .r47{
-    top: 250px;
-    left: 30px;
+    bottom: 0;
+    left: 0;
 }
 .main_room .r48{
     bottom: 0;
@@ -279,149 +328,14 @@
     bottom: 0;
     left: calc(35% + 200px);
 }
-
-/* middle seats position start */
-.middle_seats{
-    width: 60%;
+.seat_table{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 2px;
-    transform: translate(-50%);
-}
-.middle_seats label{
-    height: 30px;
-    width: 30px;
-    line-height: 28px;
-    display: block;
-    text-align: center;
-    font-size: 10px;
+    transform: translate(-50%, -50%);
     border: 1px solid;
-    position: absolute;
-    cursor: pointer;
+    padding: 20px 80px;
 }
-.middle_seats .r54{
-    top: 100%;
-    left: 0;
-}
-.middle_seats .r55{
-    top: 100%;
-    left: 30px;
-}
-.middle_seats .r56{
-    top: 100%;
-    left: 60px;
-}
-.middle_seats .r57{
-    top: 100%;
-    left: 90px;
-}
-.middle_seats .r58{
-    top: 100%;
-    left: 120px;
-}
-.middle_seats .r59{
-    top: 100%;
-    left: 150px;
-}
-.middle_seats .r60{
-    top: 100%;
-    left: 180px;
-}
-.middle_seats .r61{
-    top: 100%;
-    left: 210px;
-}
-.middle_seats .r62{
-    top: 100%;
-    left: 240px;
-}
-.middle_seats .r63{
-    top: 100%;
-    left: 270px;
-}
-.middle_seats .r64{
-    top: 100%;
-    left: 300px;
-}
-.middle_seats .r65{
-    top: 100%;
-    left: 330px;
-}
-.middle_seats .r66{
-    top: 100%;
-    left: 360px;
-}
-.middle_seats .r67{
-    top: 100%;
-    left: 390px;
-}
-.middle_seats .r68{
-    top: 100%;
-    left: 420px;
-}
-.middle_seats .r69{
-    bottom: 100%;
-    left: 420px;
-}
-.middle_seats .r70{
-    bottom: 100%;
-    left: 0;
-}
-.middle_seats .r71{
-    bottom: 100%;
-    left: 30px;
-}
-.middle_seats .r72{
-    bottom: 100%;
-    left: 60px;
-}
-.middle_seats .r73{
-    bottom: 100%;
-    left: 90px;
-}
-.middle_seats .r74{
-    bottom: 100%;
-    left: 120px;
-}
-.middle_seats .r75{
-    bottom: 100%;
-    left: 150px;
-}
-.middle_seats .r76{
-    bottom: 100%;
-    left: 180px;
-}
-.middle_seats .r77{
-    bottom: 100%;
-    left: 210px;
-}
-.middle_seats .r78{
-    bottom: 100%;
-    left: 240px;
-}
-.middle_seats .r79{
-    bottom: 100%;
-    left: 270px;
-}
-.middle_seats .r80{
-    bottom: 100%;
-    left: 300px;
-}
-.middle_seats .r81{
-    bottom: 100%;
-    left: 330px;
-}
-.middle_seats .r82{
-    bottom: 100%;
-    left: 360px;
-}
-.middle_seats .r83{
-    bottom: 100%;
-    left: 390px;
-}
-/* middle seats position end */
-
 /* main room seat position end */
 
 /* booking page design end */
