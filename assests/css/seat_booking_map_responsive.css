@@ -302,6 +302,10 @@
     .right_room::after{
         height: 20px;
     }
+    .seat_booking{
+        margin-inline: 0;
+        padding-inline: 0;
+    }
 }
 
 
