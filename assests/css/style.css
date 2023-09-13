@@ -132,7 +132,7 @@ img{
 .sign_up:hover{
     color: var(--main-color);
 }
-.navbar{
+.nav{
     position: sticky;
     top: 0;
     background: #fff;
@@ -140,6 +140,8 @@ img{
     width: 100%;
     box-shadow: 0 3px 20px 1px rgba(31, 31, 31, 0.07);
     z-index: 111;
+}
+.navbar{
     display: flex;
     padding: 10px 0;
     align-items: center;
@@ -163,6 +165,9 @@ img{
 }
 .nav_menu a:hover{
     color: var(--main-color);
+}
+.toggle{
+    display: none;
 }
 .banner{
     width: 100%;
@@ -391,4 +396,126 @@ img{
 /* single payment checkout design end */
 
 /* booking page design start */
+.seat_booking{
+    display: flex;
+    margin: 40px -20px;
+    padding-inline: 20px;
+}
+.form_block{
+    width: 50%;
+    padding-inline: 20px;
+}
+.seat_book_form{
+    width: 100%;
+    border: 1px solid rgba(31, 31, 31, 0.15);
+    padding: 40px;
+    border-radius: 5px;
+}
+.seat_book_form label{
+    font-size: 18px;
+    margin-block: 10px;
+    display: block;
+}
+.seat_book_form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.seat_book_form button{
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.selected_seat{
+    border: 1px solid rgba(31, 31, 31, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.selected_seat .seat_details{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.selected_seat .seat{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.15);
+}
+.seat_book_map{
+    width: 50%;
+}
+.seat_book_map h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+.seat_book_map p{
+    margin-bottom: 20px;
+    color: red;
+    font-size: 14px;
+}
+
 /* booking page design end */
+
+/* contact page design start */
+
+.contact_form{
+    width: 35%;
+    margin: 60px auto;
+    text-align: center;
+}
+.contact_form h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #424248;
+}
+.contact_form p{
+    color: #424248;
+    margin-block: 20px;
+}
+.contact_form input, .contact_form textarea{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #0E9E4D;
+}
+.contact_form input:focus, .contact_form textarea:focus{
+    border-color: #13ea70;
+}
+.contact_form textarea{
+    height: 200px;
+    resize: none;
+}
+.contact_form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #0E9E4D;
+    color: white;
+    cursor: pointer;
+}
+.contact_form button:active{
+    background-color: #13ea70;
+}
+
+/* contact page design end */

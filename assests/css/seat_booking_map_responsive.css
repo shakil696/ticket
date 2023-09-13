@@ -1,0 +1,310 @@
+/* responsive with media screen start */
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .topbar{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+    .nav_menu{
+        display: none;
+    }
+    .toggle{
+        width: 30px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+    .toggle span{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: grey;
+        left: 0;
+    }
+    .toggle span:nth-child(1){
+        top: 0;
+    }
+    .toggle span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .toggle span:nth-child(3){
+        bottom: 0;
+    }
+    .container{
+        max-width: 100%;
+        padding-inline: 10px;
+    }
+    .page_header h1{
+        font-size: 30px;
+    }
+    .seat_booking{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .form_block{
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .seat_book_form{
+        padding: 20px;
+    }
+    .seat_book_map{
+        width: 100%;
+    }
+    .seat_map{
+        height: 350px;
+    }
+    .main_room{
+        height: 65%;
+    }
+    .small_room_block{
+        height: 35%;
+    }
+    .entry_line{
+        font-size: 14px;
+    }
+    .left_room label,
+    .right_room label,
+    .main_room label{
+        height: 25px;
+        width: 25px;
+        line-height: 18px;
+        font-size: 10px;
+    }
+    /* left room seat position start */
+    .left_room .r1{
+        left: 0;
+    }
+    .left_room .r2{
+        top: 25px;
+    }
+    .left_room .r3{
+        top: 50px;
+    }
+    .left_room .r4{
+        left: 0;
+    }
+    .left_room .r5{
+        left: 25px;
+    }
+    .left_room .r6{
+        left: 50px;
+    }
+    .left_room .r7{
+        left: 75px;
+    }
+    .left_room .r8{
+        left: 100px;
+    }
+    .left_room .r9{
+        left: 125px;
+    }
+    .left_room .r10{
+        top: 20px;
+        right: 0;
+    }
+    .left_room .r11{
+        right: 30px;
+    }
+    /* left room seat position end */
+
+    /* right room seat position start */
+    .right_room .r13{
+        top: 25px;
+    }
+    .right_room .r14{
+        left: 0;
+    }
+    .right_room .r15{
+        left: 25px;
+    }
+    .right_room .r16{
+        left: 50px;
+    }
+    .right_room .r17{
+        left: 75px;
+    }
+    .right_room .r18{
+        left: 100px;
+    }
+    .right_room .r19{
+        left: 125px;
+    }
+    .right_room .r20{
+        bottom: 30px;
+    }
+    .right_room .r21{
+        bottom: 55px;
+    }
+    .right_room .r22{
+        bottom: 80px;
+    }
+    .right_room .r23{
+        right: 30px;
+    }
+    .right_room .r24{
+        right: 55px;
+    }
+    
+    /* right room seat position end */
+    /* main room seat position start */
+    .r32, .r33, .r34, .r35, .r36, .r37, .r38, .r39, .r40, .r41, .r42, .r43, .r44, .r45, .r52, .r53, .r54, .r55, .r56, .r57, .r58, .r59{
+        width: 20px!important;
+        height: 20px!important;
+    }
+    .main_room .r25{
+        right: 30px;
+    }
+    .main_room .r26{
+        bottom: 0;
+    }
+    .main_room .r27{
+        bottom: 25px;
+    }
+    .main_room .r28{
+        bottom: 50px;
+    }
+    .main_room .r29{
+        bottom: 75px;
+    }
+    .main_room .r30{
+        bottom: 100px;
+    }
+    .main_room .r31{
+        bottom: 125px;
+    }
+    .main_room .r32{
+        right: 10px;
+    }
+    .main_room .r33{
+        right: 30px;
+    }
+    .main_room .r34{
+        right: 50px;
+    }
+    .main_room .r35{
+        right: 70px;
+    }
+    .main_room .r36{
+        right: 90px;
+    }
+    .main_room .r37{
+        right: 110px;
+    }
+    .main_room .r38{
+        right: 130px;
+    }
+    .main_room .r39{
+        right: 150px;
+    }
+    .main_room .r40{
+        right: 170px;
+    }
+    .main_room .r41{
+        right: 190px;
+    }
+    .main_room .r42{
+        right: 210px;
+    }
+    .main_room .r43{
+        right: 230px;
+    }
+    .main_room .r44{
+        right: 250px;
+    }
+    .main_room .r45{
+        right: 270px;
+    }
+    .main_room .r46{
+        bottom: 125px;
+        left: 0;
+    }
+    .main_room .r47{
+        bottom: 100px;
+        left: 0;
+    }
+    .main_room .r48{
+        left: 0;
+        bottom: 75px;
+    }
+    .main_room .r49{
+        left: 0;
+        bottom: 50px;
+    }
+    .main_room .r50{
+        left: 0;
+        bottom: 25px;
+    }
+    .main_room .r51{
+        left: 0;
+    }
+    .main_room .r52{
+        left: 20%;
+    }
+    .main_room .r53{
+        left: calc(20% + 20px);
+    }
+    .main_room .r54{
+        left: calc(20% + 40px);
+    }
+    .main_room .r55{
+        left: calc(20% + 60px);
+    }
+    .main_room .r56{
+        left: calc(20% + 80px);
+    }
+    .main_room .r57{
+        left: calc(20% + 100px);
+    }
+    .main_room .r58{
+        left: calc(20% + 120px);
+    }
+    .main_room .r59{
+        left: calc(20% + 140px);
+    }
+    /* .seat_table{} */
+    .right_room::before{
+        left: 35%;
+        width: 15px;
+    }
+    .left_room::before{
+        width: 15px;
+    }
+    .left_room::after{
+        height: 20px;
+    }
+    .right_room::after{
+        height: 20px;
+    }
+}
+
+
+
+
+/* responsive with media screen end */

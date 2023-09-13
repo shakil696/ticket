@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assests/css/style.css">
-    <link rel="stylesheet" href="./assests/css/seat_booking.css">
-    <link rel="stylesheet" href="./assests/css/seat_booking_responsive.css">
+    <link rel="stylesheet" href="./assests/css/seat_booking_map.css">
+    <link rel="stylesheet" href="./assests/css/seat_booking_map_responsive.css">
 </head>
 <body>
     <!-- Header Start -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="topbar">
             <div class="container">
                 <div class="left_side">
@@ -35,6 +35,8 @@
                 </div>
             </div>
         </div>
+    </header>
+    <div class="nav">
         <div class="container">
             <nav class="navbar">
                 <a href="" class="logo">
@@ -44,9 +46,14 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
-    </header> -->
+    </div>
     <!-- Header End -->
     <!-- page header start -->
     <div class="page_header">
@@ -56,45 +63,47 @@
 
     <div class="container">
         <div class="seat_booking">
-            <form action="" class="seat_book_form">
-                <label for="">Joining Time</label>
-                <input type="datetime-local">
-                <label for="">Place</label>
-                <input type="text" readonly value="Karimullah Market">
-                <label for="">Selected Seats</label>
-                <div class="selected_seat">
-                    <div class="seat">
-                        <span>1-A1</span>
-                        <span>15 TK</span>
+            <div class="form_block">
+                <form action="" class="seat_book_form">
+                    <label for="">Joining Time</label>
+                    <input type="datetime-local">
+                    <label for="">Place</label>
+                    <input type="text" readonly value="Karimullah Market">
+                    <label for="">Selected Seats</label>
+                    <div class="selected_seat">
+                        <div class="seat_details">
+                            <span>Seat Details</span>
+                            <span>Price</span>
+                        </div>
+                        <div class="seat">
+                            <span>1-A1</span>
+                            <span>15 TK</span>
+                        </div>
+                        <div class="seat">
+                            <span>1-A1</span>
+                            <span>15 TK</span>
+                        </div>
+                        <div class="seat">
+                            <span>1-A1</span>
+                            <span>15 TK</span>
+                        </div>
+                        <div class="seat">
+                            <span>1-A1</span>
+                            <span>15 TK</span>
+                        </div>
+                        <div class="seat">
+                            <span>Subtotal</span>
+                            <span>60 TK</span>
+                        </div>
                     </div>
-                    <div class="seat">
-                        <span>1-A1</span>
-                        <span>15 TK</span>
-                    </div>
-                    <div class="seat">
-                        <span>1-A1</span>
-                        <span>15 TK</span>
-                    </div>
-                    <div class="seat">
-                        <span>1-A1</span>
-                        <span>15 TK</span>
-                    </div>
-                    <div class="seat">
-                        <span>Subtotal</span>
-                        <span>60 TK</span>
-                    </div>
-                </div>
-                <button type="submit">Continue</button>
-            </form>
+                    <button type="submit">Continue</button>
+                </form>
+            </div>
             <div class="seat_book_map">
                 <h1>Click on Seat to select or deselect</h1>
                 <p>Off Days: <span>Friday</span></p>
                 <div class="seat_map">
                     <div class="main_room">
-                            <input type="checkbox" name="" id="R23">
-                            <label for="R23" class="r23">23</label>
-                            <input type="checkbox" name="" id="R24">
-                            <label for="R24" class="r24">24</label>
                             <input type="checkbox" name="" id="R25">
                             <label for="R25" class="r25">25</label>
                             <input type="checkbox" name="" id="R26">
@@ -153,7 +162,56 @@
                             <label for="R52" class="r52">52</label>
                             <input type="checkbox" name="" id="R53">
                             <label for="R53" class="r53">53</label>
-                            <div class="seat_table">Table</div>
+                            <input type="checkbox" name="" id="R54">
+                            <label for="R54" class="r54">54</label>
+                            <input type="checkbox" name="" id="R55">
+                            <label for="R55" class="r55">55</label>
+                            <input type="checkbox" name="" id="R56">
+                            <label for="R56" class="r56">56</label>
+                            <input type="checkbox" name="" id="R57">
+                            <label for="R57" class="r57">57</label>
+                            <input type="checkbox" name="" id="R58">
+                            <label for="R58" class="r58">58</label>
+                            <input type="checkbox" name="" id="R59">
+                            <label for="R59" class="r59">59</label>
+                            <div class="seat_table">
+                                <div>
+                                    <input type="checkbox" name="" id="R60">
+                                    <label for="R60" class="r60">60</label>
+                                    <input type="checkbox" name="" id="R61">
+                                    <label for="R61" class="r61">61</label>
+                                    <input type="checkbox" name="" id="R62">
+                                    <label for="R62" class="r62">62</label>
+                                    <input type="checkbox" name="" id="R63">
+                                    <label for="R63" class="r63">63</label>
+                                    <input type="checkbox" name="" id="R64">
+                                    <label for="R64" class="r64">64</label>
+                                    <input type="checkbox" name="" id="R65">
+                                    <label for="R65" class="r65">65</label>
+                                    <input type="checkbox" name="" id="R66">
+                                    <label for="R66" class="r66">66</label>
+                                    <input type="checkbox" name="" id="R67">
+                                    <label for="R67" class="r67">67</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="" id="R68">
+                                    <label for="R68" class="r68">68</label>
+                                    <input type="checkbox" name="" id="R69">
+                                    <label for="R69" class="r69">69</label>
+                                    <input type="checkbox" name="" id="R70">
+                                    <label for="R70" class="r70">70</label>
+                                    <input type="checkbox" name="" id="R71">
+                                    <label for="R71" class="r71">71</label>
+                                    <input type="checkbox" name="" id="R72">
+                                    <label for="R72" class="r72">72</label>
+                                    <input type="checkbox" name="" id="R73">
+                                    <label for="R73" class="r73">73</label>
+                                    <input type="checkbox" name="" id="R74">
+                                    <label for="R74" class="r74">74</label>
+                                    <input type="checkbox" name="" id="R75">
+                                    <label for="R75" class="r75">75</label>
+                                </div>
+                            </div>
                     </div>
                     <div class="small_room_block">
                         <div class="entry_line">Entrance</div>
@@ -204,10 +262,14 @@
                             <label for="R21" class="r21">21</label>
                             <input type="checkbox" name="" id="R22">
                             <label for="R22" class="r22">22</label>
+                            <input type="checkbox" name="" id="R23">
+                            <label for="R23" class="r23">23</label>
+                            <input type="checkbox" name="" id="R24">
+                            <label for="R24" class="r24">24</label>
                         </div>
                     </div>
                 </div>
-                <div class="room_seat_hint">
+                <!-- <div class="room_seat_hint">
                     <div class="hint_card">
                         <span></span>
                         Available Seats
@@ -216,7 +278,7 @@
                         <span></span>
                         Selected by You
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
