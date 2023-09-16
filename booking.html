@@ -1,288 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assests/css/style.css">
-    <link rel="stylesheet" href="./assests/css/seat_booking_map.css">
-    <link rel="stylesheet" href="./assests/css/seat_booking_map_responsive.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/seat_booking_map.css" />
+    <link
+      rel="stylesheet"
+      href="./assests/css/seat_booking_map_responsive.css"
+    />
+  </head>
+  <body>
     <!-- Header Start -->
     <header class="header">
-        <div class="topbar">
-            <div class="container">
-                <div class="left_side">
-                    <span class="phone"><i class="las la-phone"></i> +44 45678908</span>
-                    <span class="mail"><i class="las la-envelope-open"></i> example@gmail.com</span>
-                </div>
-                <div class="right_side">
-                    <div class="lang">
-                        <select name="" id="">
-                            <option value="English">English</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Bangla">Bangla</option>
-                        </select>
-                    </div>
-                    <div class="user_account">
-                        <a href="" class="sign_in"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-                        <span>/</span>
-                        <a href="" class="sign_up"><i class="fas fa-user-plus"></i> Sign Up</a>
-                    </div>
-                </div>
+      <div class="topbar">
+        <div class="container">
+          <div class="left_side">
+            <span class="phone"><i class="las la-phone"></i> +44 45678908</span>
+            <span class="mail"
+              ><i class="las la-envelope-open"></i> example@gmail.com</span
+            >
+          </div>
+          <div class="right_side">
+            <div class="lang">
+              <select name="" id="">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bangla">Bangla</option>
+              </select>
             </div>
+            <div class="user_account">
+              <a href="" class="sign_in"
+                ><i class="fas fa-sign-in-alt"></i> Sign In</a
+              >
+              <span>/</span>
+              <a href="" class="sign_up"
+                ><i class="fas fa-user-plus"></i> Sign Up</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <div class="nav">
-        <div class="container">
-            <nav class="navbar">
-                <a href="" class="logo">
-                    <img src="./assests/images/logo.png" alt="">
-                </a>
-                <ul class="nav_menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-                <div class="toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar">
+            <input type="checkbox" id="toggle_bar" hidden>
+          <a href="" class="logo">
+            <img src="./assests/images/logo.png" alt="" />
+          </a>
+          <ul class="nav_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <label for="toggle_bar" class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </nav>
+      </div>
     </div>
     <!-- Header End -->
     <!-- page header start -->
     <div class="page_header">
-        <h1>Book Your Seat</h1>
+      <h1>Book Your Seat</h1>
     </div>
     <!-- page header end -->
 
     <div class="container">
-        <div class="seat_booking">
-            <div class="form_block">
-                <form action="" class="seat_book_form">
-                    <label for="">Joining Time</label>
-                    <input type="datetime-local">
-                    <label for="">Place</label>
-                    <input type="text" readonly value="Karimullah Market">
-                    <label for="">Selected Seats</label>
-                    <div class="selected_seat">
-                        <div class="seat_details">
-                            <span>Seat Details</span>
-                            <span>Price</span>
-                        </div>
-                        <div class="seat">
-                            <span>1-A1</span>
-                            <span>15 TK</span>
-                        </div>
-                        <div class="seat">
-                            <span>1-A1</span>
-                            <span>15 TK</span>
-                        </div>
-                        <div class="seat">
-                            <span>1-A1</span>
-                            <span>15 TK</span>
-                        </div>
-                        <div class="seat">
-                            <span>1-A1</span>
-                            <span>15 TK</span>
-                        </div>
-                        <div class="seat">
-                            <span>Subtotal</span>
-                            <span>60 TK</span>
-                        </div>
-                    </div>
-                    <button type="submit">Continue</button>
-                </form>
+      <div class="seat_booking">
+        <div class="form_block">
+          <form action="" class="seat_book_form">
+            <label for="">Joining Time</label>
+            <input type="datetime-local" />
+            <label for="">Place</label>
+            <input type="text" readonly value="Karimullah Market" />
+            <label for="">Selected Seats</label>
+            <div class="selected_seat">
+              <div class="seat_details">
+                <span>Seat Details</span>
+                <span>Price</span>
+              </div>
+              <div class="seat">
+                <span>1-A1</span>
+                <span>15 TK</span>
+              </div>
+              <div class="seat">
+                <span>1-A1</span>
+                <span>15 TK</span>
+              </div>
+              <div class="seat">
+                <span>1-A1</span>
+                <span>15 TK</span>
+              </div>
+              <div class="seat">
+                <span>1-A1</span>
+                <span>15 TK</span>
+              </div>
+              <div class="seat">
+                <span>Subtotal</span>
+                <span>60 TK</span>
+              </div>
             </div>
-            <div class="seat_book_map">
-                <h1>Click on Seat to select or deselect</h1>
-                <p>Off Days: <span>Friday</span></p>
-                <div class="seat_map">
-                    <div class="main_room">
-                            <input type="checkbox" name="" id="R25">
-                            <label for="R25" class="r25">25</label>
-                            <input type="checkbox" name="" id="R26">
-                            <label for="R26" class="r26">26</label>
-                            <input type="checkbox" name="" id="R27">
-                            <label for="R27" class="r27">27</label>
-                            <input type="checkbox" name="" id="R28">
-                            <label for="R28" class="r28">28</label>
-                            <input type="checkbox" name="" id="R29">
-                            <label for="R29" class="r29">29</label>
-                            <input type="checkbox" name="" id="R30">
-                            <label for="R30" class="r30">30</label>
-                            <input type="checkbox" name="" id="R31">
-                            <label for="R31" class="r31">31</label>
-                            <input type="checkbox" name="" id="R32">
-                            <label for="R32" class="r32">32</label>
-                            <input type="checkbox" name="" id="R33">
-                            <label for="R33" class="r33">33</label>
-                            <input type="checkbox" name="" id="R34">
-                            <label for="R34" class="r34">34</label>
-                            <input type="checkbox" name="" id="R35">
-                            <label for="R35" class="r35">35</label>
-                            <input type="checkbox" name="" id="R36">
-                            <label for="R36" class="r36">36</label>
-                            <input type="checkbox" name="" id="R37">
-                            <label for="R37" class="r37">37</label>
-                            <input type="checkbox" name="" id="R38">
-                            <label for="R38" class="r38">38</label>
-                            <input type="checkbox" name="" id="R39">
-                            <label for="R39" class="r39">39</label>
-                            <input type="checkbox" name="" id="R40">
-                            <label for="R40" class="r40">40</label>
-                            <input type="checkbox" name="" id="R41">
-                            <label for="R41" class="r41">41</label>
-                            <input type="checkbox" name="" id="R42">
-                            <label for="R42" class="r42">42</label>
-                            <input type="checkbox" name="" id="R43">
-                            <label for="R43" class="r43">43</label>
-                            <input type="checkbox" name="" id="R44">
-                            <label for="R44" class="r44">44</label>
-                            <input type="checkbox" name="" id="R45">
-                            <label for="R45" class="r45">45</label>
-                            <input type="checkbox" name="" id="R46">
-                            <label for="R46" class="r46">46</label>
-                            <input type="checkbox" name="" id="R47">
-                            <label for="R47" class="r47">47</label>
-                            <input type="checkbox" name="" id="R48">
-                            <label for="R48" class="r48">48</label>
-                            <input type="checkbox" name="" id="R49">
-                            <label for="R49" class="r49">49</label>
-                            <input type="checkbox" name="" id="R50">
-                            <label for="R50" class="r50">50</label>
-                            <input type="checkbox" name="" id="R51">
-                            <label for="R51" class="r51">51</label>
-                            <input type="checkbox" name="" id="R52">
-                            <label for="R52" class="r52">52</label>
-                            <input type="checkbox" name="" id="R53">
-                            <label for="R53" class="r53">53</label>
-                            <input type="checkbox" name="" id="R54">
-                            <label for="R54" class="r54">54</label>
-                            <input type="checkbox" name="" id="R55">
-                            <label for="R55" class="r55">55</label>
-                            <input type="checkbox" name="" id="R56">
-                            <label for="R56" class="r56">56</label>
-                            <input type="checkbox" name="" id="R57">
-                            <label for="R57" class="r57">57</label>
-                            <input type="checkbox" name="" id="R58">
-                            <label for="R58" class="r58">58</label>
-                            <input type="checkbox" name="" id="R59">
-                            <label for="R59" class="r59">59</label>
-                            <div class="seat_table">
-                                <div>
-                                    <input type="checkbox" name="" id="R60">
-                                    <label for="R60" class="r60">60</label>
-                                    <input type="checkbox" name="" id="R61">
-                                    <label for="R61" class="r61">61</label>
-                                    <input type="checkbox" name="" id="R62">
-                                    <label for="R62" class="r62">62</label>
-                                    <input type="checkbox" name="" id="R63">
-                                    <label for="R63" class="r63">63</label>
-                                    <input type="checkbox" name="" id="R64">
-                                    <label for="R64" class="r64">64</label>
-                                    <input type="checkbox" name="" id="R65">
-                                    <label for="R65" class="r65">65</label>
-                                    <input type="checkbox" name="" id="R66">
-                                    <label for="R66" class="r66">66</label>
-                                    <input type="checkbox" name="" id="R67">
-                                    <label for="R67" class="r67">67</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" name="" id="R68">
-                                    <label for="R68" class="r68">68</label>
-                                    <input type="checkbox" name="" id="R69">
-                                    <label for="R69" class="r69">69</label>
-                                    <input type="checkbox" name="" id="R70">
-                                    <label for="R70" class="r70">70</label>
-                                    <input type="checkbox" name="" id="R71">
-                                    <label for="R71" class="r71">71</label>
-                                    <input type="checkbox" name="" id="R72">
-                                    <label for="R72" class="r72">72</label>
-                                    <input type="checkbox" name="" id="R73">
-                                    <label for="R73" class="r73">73</label>
-                                    <input type="checkbox" name="" id="R74">
-                                    <label for="R74" class="r74">74</label>
-                                    <input type="checkbox" name="" id="R75">
-                                    <label for="R75" class="r75">75</label>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="small_room_block">
-                        <div class="entry_line">Entrance</div>
-                        <div class="left_room">
-                            <input type="checkbox" name="" id="R1">
-                            <label for="R1" class="r1">1</label>
-                            <input type="checkbox" name="" id="R2">
-                            <label for="R2" class="r2">2</label>
-                            <input type="checkbox" name="" id="R3">
-                            <label for="R3" class="r3">3</label>
-                            <input type="checkbox" name="" id="R4">
-                            <label for="R4" class="r4">4</label>
-                            <input type="checkbox" name="" id="R5">
-                            <label for="R5" class="r5">5</label>
-                            <input type="checkbox" name="" id="R6">
-                            <label for="R6" class="r6">6</label>
-                            <input type="checkbox" name="" id="R7">
-                            <label for="R7" class="r7">7</label>
-                            <input type="checkbox" name="" id="R8">
-                            <label for="R8" class="r8">8</label>
-                            <input type="checkbox" name="" id="R9">
-                            <label for="R9" class="r9">9</label>
-                            <input type="checkbox" name="" id="R10">
-                            <label for="R10" class="r10">10</label>
-                            <input type="checkbox" name="" id="R11">
-                            <label for="R11" class="r11">11</label>
-                        </div>
-                        <div class="right_room">
-                            <input type="checkbox" name="" id="R12">
-                            <label for="R12" class="r12">12</label>
-                            <input type="checkbox" name="" id="R13">
-                            <label for="R13" class="r13">13</label>
-                            <input type="checkbox" name="" id="R14">
-                            <label for="R14" class="r14">14</label>
-                            <input type="checkbox" name="" id="R15">
-                            <label for="R15" class="r15">15</label>
-                            <input type="checkbox" name="" id="R16">
-                            <label for="R16" class="r16">16</label>
-                            <input type="checkbox" name="" id="R17">
-                            <label for="R17" class="r17">17</label>
-                            <input type="checkbox" name="" id="R18">
-                            <label for="R18" class="r18">18</label>
-                            <input type="checkbox" name="" id="R19">
-                            <label for="R19" class="r19">19</label>
-                            <input type="checkbox" name="" id="R20">
-                            <label for="R20" class="r20">20</label>
-                            <input type="checkbox" name="" id="R21">
-                            <label for="R21" class="r21">21</label>
-                            <input type="checkbox" name="" id="R22">
-                            <label for="R22" class="r22">22</label>
-                            <input type="checkbox" name="" id="R23">
-                            <label for="R23" class="r23">23</label>
-                            <input type="checkbox" name="" id="R24">
-                            <label for="R24" class="r24">24</label>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="room_seat_hint">
-                    <div class="hint_card">
-                        <span></span>
-                        Available Seats
-                    </div>
-                    <div class="hint_card">
-                        <span></span>
-                        Selected by You
-                    </div>
-                </div> -->
-            </div>
+            <button type="submit">Continue</button>
+          </form>
         </div>
+        <div class="seat_book_map">
+          <h1>Click on Seat to select or deselect</h1>
+          <p>Off Days: <span>Friday</span></p>
+          <div class="seat_map">
+            <div class="main_room">
+              <input type="checkbox" name="" id="R25" />
+              <label for="R25" class="r25">25</label>
+              <input type="checkbox" name="" id="R26" />
+              <label for="R26" class="r26">26</label>
+              <input type="checkbox" name="" id="R27" />
+              <label for="R27" class="r27">27</label>
+              <input type="checkbox" name="" id="R28" />
+              <label for="R28" class="r28">28</label>
+              <input type="checkbox" name="" id="R29" />
+              <label for="R29" class="r29">29</label>
+              <input type="checkbox" name="" id="R30" />
+              <label for="R30" class="r30">30</label>
+              <input type="checkbox" name="" id="R31" />
+              <label for="R31" class="r31">31</label>
+              <input type="checkbox" name="" id="R32" />
+              <label for="R32" class="r32">32</label>
+              <input type="checkbox" name="" id="R33" />
+              <label for="R33" class="r33">33</label>
+              <input type="checkbox" name="" id="R34" />
+              <label for="R34" class="r34">34</label>
+              <input type="checkbox" name="" id="R35" />
+              <label for="R35" class="r35">35</label>
+              <input type="checkbox" name="" id="R36" />
+              <label for="R36" class="r36">36</label>
+              <input type="checkbox" name="" id="R37" />
+              <label for="R37" class="r37">37</label>
+              <input type="checkbox" name="" id="R38" />
+              <label for="R38" class="r38">38</label>
+              <input type="checkbox" name="" id="R39" />
+              <label for="R39" class="r39">39</label>
+              <input type="checkbox" name="" id="R40" />
+              <label for="R40" class="r40">40</label>
+              <input type="checkbox" name="" id="R41" />
+              <label for="R41" class="r41">41</label>
+              <input type="checkbox" name="" id="R42" />
+              <label for="R42" class="r42">42</label>
+              <input type="checkbox" name="" id="R43" />
+              <label for="R43" class="r43">43</label>
+              <input type="checkbox" name="" id="R44" />
+              <label for="R44" class="r44">44</label>
+              <input type="checkbox" name="" id="R45" />
+              <label for="R45" class="r45">45</label>
+              <input type="checkbox" name="" id="R46" />
+              <label for="R46" class="r46">46</label>
+              <input type="checkbox" name="" id="R47" />
+              <label for="R47" class="r47">47</label>
+              <input type="checkbox" name="" id="R48" />
+              <label for="R48" class="r48">48</label>
+              <input type="checkbox" name="" id="R49" />
+              <label for="R49" class="r49">49</label>
+              <input type="checkbox" name="" id="R50" />
+              <label for="R50" class="r50">50</label>
+              <input type="checkbox" name="" id="R51" />
+              <label for="R51" class="r51">51</label>
+              <input type="checkbox" name="" id="R52" />
+              <label for="R52" class="r52">52</label>
+              <input type="checkbox" name="" id="R53" />
+              <label for="R53" class="r53">53</label>
+              <input type="checkbox" name="" id="R54" />
+              <label for="R54" class="r54">54</label>
+              <input type="checkbox" name="" id="R55" />
+              <label for="R55" class="r55">55</label>
+              <input type="checkbox" name="" id="R56" />
+              <label for="R56" class="r56">56</label>
+              <input type="checkbox" name="" id="R57" />
+              <label for="R57" class="r57">57</label>
+              <input type="checkbox" name="" id="R58" />
+              <label for="R58" class="r58">58</label>
+              <input type="checkbox" name="" id="R59" />
+              <label for="R59" class="r59">59</label>
+              <div class="seat_table">
+                <div>
+                  <input type="checkbox" name="" id="R60" />
+                  <label for="R60" class="r60">60</label>
+                  <input type="checkbox" name="" id="R61" />
+                  <label for="R61" class="r61">61</label>
+                  <input type="checkbox" name="" id="R62" />
+                  <label for="R62" class="r62">62</label>
+                  <input type="checkbox" name="" id="R63" />
+                  <label for="R63" class="r63">63</label>
+                  <input type="checkbox" name="" id="R64" />
+                  <label for="R64" class="r64">64</label>
+                  <input type="checkbox" name="" id="R65" />
+                  <label for="R65" class="r65">65</label>
+                  <input type="checkbox" name="" id="R66" />
+                  <label for="R66" class="r66">66</label>
+                  <input type="checkbox" name="" id="R67" />
+                  <label for="R67" class="r67">67</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="R68" />
+                  <label for="R68" class="r68">68</label>
+                  <input type="checkbox" name="" id="R69" />
+                  <label for="R69" class="r69">69</label>
+                  <input type="checkbox" name="" id="R70" />
+                  <label for="R70" class="r70">70</label>
+                  <input type="checkbox" name="" id="R71" />
+                  <label for="R71" class="r71">71</label>
+                  <input type="checkbox" name="" id="R72" />
+                  <label for="R72" class="r72">72</label>
+                  <input type="checkbox" name="" id="R73" />
+                  <label for="R73" class="r73">73</label>
+                  <input type="checkbox" name="" id="R74" />
+                  <label for="R74" class="r74">74</label>
+                  <input type="checkbox" name="" id="R75" />
+                  <label for="R75" class="r75">75</label>
+                </div>
+              </div>
+            </div>
+            <div class="small_room_block">
+              <div class="entry_line">Entrance</div>
+              <div class="left_room">
+                <input type="checkbox" name="" id="R1" />
+                <label for="R1" class="r1">1</label>
+                <input type="checkbox" name="" id="R2" />
+                <label for="R2" class="r2">2</label>
+                <input type="checkbox" name="" id="R3" />
+                <label for="R3" class="r3">3</label>
+                <input type="checkbox" name="" id="R4" />
+                <label for="R4" class="r4">4</label>
+                <input type="checkbox" name="" id="R5" />
+                <label for="R5" class="r5">5</label>
+                <input type="checkbox" name="" id="R6" />
+                <label for="R6" class="r6">6</label>
+                <input type="checkbox" name="" id="R7" />
+                <label for="R7" class="r7">7</label>
+                <input type="checkbox" name="" id="R8" />
+                <label for="R8" class="r8">8</label>
+                <input type="checkbox" name="" id="R9" />
+                <label for="R9" class="r9">9</label>
+                <input type="checkbox" name="" id="R10" />
+                <label for="R10" class="r10">10</label>
+                <input type="checkbox" name="" id="R11" />
+                <label for="R11" class="r11">11</label>
+              </div>
+              <div class="right_room">
+                <input type="checkbox" name="" id="R12" />
+                <label for="R12" class="r12">12</label>
+                <input type="checkbox" name="" id="R13" />
+                <label for="R13" class="r13">13</label>
+                <input type="checkbox" name="" id="R14" />
+                <label for="R14" class="r14">14</label>
+                <input type="checkbox" name="" id="R15" />
+                <label for="R15" class="r15">15</label>
+                <input type="checkbox" name="" id="R16" />
+                <label for="R16" class="r16">16</label>
+                <input type="checkbox" name="" id="R17" />
+                <label for="R17" class="r17">17</label>
+                <input type="checkbox" name="" id="R18" />
+                <label for="R18" class="r18">18</label>
+                <input type="checkbox" name="" id="R19" />
+                <label for="R19" class="r19">19</label>
+                <input type="checkbox" name="" id="R20" />
+                <label for="R20" class="r20">20</label>
+                <input type="checkbox" name="" id="R21" />
+                <label for="R21" class="r21">21</label>
+                <input type="checkbox" name="" id="R22" />
+                <label for="R22" class="r22">22</label>
+                <input type="checkbox" name="" id="R23" />
+                <label for="R23" class="r23">23</label>
+                <input type="checkbox" name="" id="R24" />
+                <label for="R24" class="r24">24</label>
+              </div>
+            </div>
+          </div>
+          <div class="room_seat_hint">
+            <div class="hint_card">
+              <span></span>
+              Available Seats
+            </div>
+            <div class="hint_card">
+              <span></span>
+              Selected by You
+            </div>
+            <div class="hint_card">
+              <span></span>
+              Already Booked
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./assests/js/app.js"></script>
-</body>
+  </body>
 </html>
